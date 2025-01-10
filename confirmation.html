@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="conformation.css">
+</head>
+<body>
+    <div class="confirmation-container">
+        <h1>Order Confirmed!</h1>
+        <p>Thank you for your payment.</p>
+        <div id="receipt">
+        </div>
+        <button id="download-receipt" class="download-receipt-btn">Download Receipt</button>
+        <a href="index.html" class="back-home">Back to Home</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <script src="conformation.js"></script>
+</body>
+</html>

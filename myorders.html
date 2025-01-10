@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Orders - CanteenHub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="myorders.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">CanteenHub</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="login.html">Login/Sign up</a></li>
+        <li><a href="myorders.html" class="my-orders-icon">
+          <i class="fa fa-list-alt"></i> My Orders
+        </a></li>
+      </ul>
+      <div class="cart">
+        <a href="cart.html">
+          <span class="cart-icon"><i class="fa fa-shopping-cart"></i></span>
+          <span id="cart-count" class="cart-count">0</span> items - ₹<span id="cart-total">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="my-orders" class="orders-section">
+      <h2>Your Orders    </h2>
+
+      <div id="orders-list" class="orders-list">
+        <!-- Sample Orders -->
+        <div class="order-card" id="order1">
+          <h3>Order #001</h3>
+          <p>Item: Pizza</p>
+          <p>Quantity: 2</p>
+          <p>Price: ₹400</p>
+          <button class="cancel-btn">Cancel Order</button>
+        </div>
+
+        <div class="order-card" id="order2">
+          <h3>Order #002</h3>
+          <p>Item: Burger</p>
+          <p>Quantity: 1</p>
+          <p>Price: ₹150</p>
+          <button class="cancel-btn">Cancel Order</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="myorders.js"></script>
+</body>
+</html>
